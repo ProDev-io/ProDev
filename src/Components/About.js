@@ -1,3 +1,7 @@
+import 'lazysizes';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
+
+
 import ecom from '../Images/ecom.jpg';
 import hosting from '../Images/hosting.jpg';
 import res from '../Images/res.jpg';
@@ -7,8 +11,12 @@ import database from '../Images/database.jpg';
 
 function RenderService({ image, serviceName }){
 	return (
-		<div className="flex items-center align-middle justify-center flex-col gap-2 cursor-pointer">
-			<img src={image} alt="" className='object-cover border rounded-md h-80 w-full'/>
+		<div
+		className
+		="flex items-center align-middle justify-center
+		flex-col gap-y-2 cursor-pointer drop-shadow-lg
+		hover:drop-shadow-2xl">
+			<img data-src={image} data-sizes="auto" alt="" className='object-cover lazyload border rounded-lg h-80 w-full'/>
 			<h3 className='border-b-4 border-yellow-950 mb-2'>{serviceName}</h3>
 		</div>
 	)
@@ -60,7 +68,7 @@ function About(){
 	]
 
 	return (
-		<div className="p-5 flex flex-col gap-4 h-full">
+		<div className="p-5 flex flex-col gap- h-full">
 			<h2 className='text-4xl p-3'>What We Do</h2>
 			<section>
 					<ul className='grid grid-cols-3 gap-2'>
@@ -68,7 +76,7 @@ function About(){
 							return (
 							<li
 							key={Math.random() * 100}
-							className='p-2 text-left text-xl'
+							className='p-4 m-4 text-left text-xl border rounded-md shadow-2xl drop-shadow-lg hover:shadow-blue-300 transition-all ease-in-out hover:translate-y-1 hover:scale-110 duration-300'
 							>
 								{m}
 								</li>
@@ -79,7 +87,7 @@ function About(){
 
 			<article className='p-5'>
 					<h2 className='text-4xl p-3'>Services Offered</h2>
-					<div className='grid grid-cols-3 items-center justify-center align-middle gap-2 gap-y-4 p-2'>
+					<div className='grid grid-cols-3 items-center justify-center align-middle gap-x-6 gap-y-4 p-2'>
 						{ servicesObjects.map((serv) => {
 							const { id, name, photo } = serv;
 							return <RenderService key={id} serviceName={name} image={photo} />
