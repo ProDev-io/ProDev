@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { useState } from "react";
 import emailjs from 'emailjs-com'
 
@@ -109,7 +110,7 @@ function Footer(){
 							Questions or Queries :
 						</p>
 
-						<p className="text-yellow-50 flex flex-col">
+						<p className="text-yellow-50 flex flex-col gap-4">
 							<span className ='underline hover:text-blue-600'>
 								support@prodev.io
 							</span>
@@ -121,6 +122,9 @@ function Footer(){
 							<span className="hover:text-blue-600">
 								Call / Whatsapp : +254 758 925 528 | +254 798 347 396
 							</span>
+							<Link to="/">
+								<h1 className='text-5xl cursor-pointer hover:text-blue-500 shadow-lg'>ProDev.io</h1>
+							</Link>
 						</p>
 					</div>
 				</div>
