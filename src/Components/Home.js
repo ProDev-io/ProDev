@@ -22,7 +22,7 @@ function HomeContent(){
 					You Imagine it, We Build it!
 				</p>
 			<div>
-				<button className='border-black rounded font-thin bg-black text-white p-2 hover:bg-white hover:text-black'>
+				<button className='border-black animate-bounce rounded font-thin bg-black text-white p-2 hover:bg-white hover:text-black'>
 					Tell Us Your Vison
 				</button>
 			</div>
