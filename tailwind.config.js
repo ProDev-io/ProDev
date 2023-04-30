@@ -7,7 +7,7 @@ module.exports = {
     extend: {
       fontFamily : {
         'main' : ['DM Sans', 'sans-serif'],
-        'mobile' : ['IBM Plex Mono', 'sans-serif']
+        'mobile' : ['Inter', 'sans-serif']
       },
       screens: {
         'mobile' : '375px',
