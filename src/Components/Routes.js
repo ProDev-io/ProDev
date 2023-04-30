@@ -1,13 +1,13 @@
 import { Route, Routes } from "react-router-dom";
 
 import Home from "./Home";
-import Footer from "./Footer";
+import Lost from "./Lost";
 
 function Paths(){
 	return (
 		<Routes>
 			<Route exact path="/"  element={<Home/>} />
-			<Route exact path="*" element={<Footer />}/>
+			<Route exact path="*" element={<Lost />}/>
 		</Routes>
 	)
 };
