@@ -76,7 +76,7 @@ function About(){
 							return (
 							<li
 							key={Math.random() * 100}
-							className='p-4 m-4 cursor-pointer text-left text-xl border rounded-md shadow-2xl drop-shadow-lg hover:shadow-blue-300 transition-all ease-in-out hover:translate-y-1 hover:scale-110 duration-300'
+							className='p-4 m-4 cursor-pointer text-left text-xl border rounded-md shadow-2xl drop-shadow-lg hover:shadow-blue-500 transition-all ease-in-out hover:translate-y-1 hover:scale-110 duration-300'
 							>
 								{m}
 								</li>
