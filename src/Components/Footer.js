@@ -110,7 +110,7 @@ function Footer(){
 							Questions or Queries :
 						</p>
 
-						<p className="text-yellow-50 flex flex-col gap-4">
+						<div className="text-yellow-50 flex flex-col gap-4">
 							<span className ='underline hover:text-blue-600'>
 								support@prodev.io
 							</span>
@@ -125,7 +125,7 @@ function Footer(){
 							<Link to="/">
 								<h1 className='text-5xl cursor-pointer hover:text-blue-500 shadow-lg'>ProDev.io</h1>
 							</Link>
-						</p>
+						</div>
 					</div>
 				</div>
 
