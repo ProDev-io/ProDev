@@ -1,12 +1,16 @@
+import { Link } from "react-router-dom";
+
 import About from './About'
 import coding  from '../Images/people-coding.png'
 import Footer from './Footer'
 
 
-function Navigation(){
+export function Navigation(){
 	return (
 		<div className="inline-flex bg-black sticky text-slate-200 p-4 gap-2 cursor-pointer w-full items-center justify-around align-middle space-x-2 shadow-cyan-50">
-			<h1 className='text-5xl hover:text-yellow-50'>ProDev.io</h1>
+			<Link to="/">
+				<h1 className='text-5xl cursor-pointer hover:text-blue-500 shadow-lg'>ProDev.io</h1>
+			</Link>
 			<h2 className='hover:text-yellow-50'>WHAT WE DO</h2>
 			<h2 className='hover:text-yellow-50'>CONTACT US</h2>
 		</div>
@@ -22,7 +26,7 @@ function HomeContent(){
 					You Imagine it, We Build it!
 				</p>
 			<div>
-				<button className='border-black rounded font-thin bg-black text-white p-2 hover:bg-white hover:text-black'>
+				<button className='border-black animate-bounce rounded font-thin bg-black text-white p-2 hover:bg-white hover:text-black'>
 					Tell Us Your Vison
 				</button>
 			</div>

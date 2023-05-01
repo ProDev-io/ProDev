@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { useState } from "react";
 import emailjs from 'emailjs-com'
 
@@ -83,7 +84,7 @@ function ContactForm(){
 						 name="message"
 						 id="message"
 						 rows="5"
-						 className="form-input block p-2.5 w-full text-lg text-black bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+						 className="form-input block p-2.5 w-full text-lg text-black rounded-lg border"
 						 placeholder="Tell us what we shall do for you..."
 						 value={formData.message}
 						 onChange={(e) => handleChange(e)}>
@@ -109,7 +110,7 @@ function Footer(){
 							Questions or Queries :
 						</p>
 
-						<p className="text-yellow-50 flex flex-col">
+						<div className="text-yellow-50 flex flex-col gap-4">
 							<span className ='underline hover:text-blue-600'>
 								support@prodev.io
 							</span>
@@ -121,7 +122,10 @@ function Footer(){
 							<span className="hover:text-blue-600">
 								Call / Whatsapp : +254 758 925 528 | +254 798 347 396
 							</span>
-						</p>
+							<Link to="/">
+								<h1 className='text-5xl cursor-pointer hover:text-blue-500 shadow-lg'>ProDev.io</h1>
+							</Link>
+						</div>
 					</div>
 				</div>
 

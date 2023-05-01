@@ -1,13 +1,16 @@
 {
-  "name": "client_template",
+  "name": "prodev",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:4000/",
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "version": "0.1.0",
+    "gsap": "^3.11.5",
+    "lazysizes": "^5.3.2",
+    "locomotive-scroll": "^4.1.4",
     "emailjs-com": "^3.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
