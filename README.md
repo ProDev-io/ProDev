@@ -1,8 +1,4 @@
 # ProDev.io
-## Overview
-ProDev.io is a commercial website platform that offers phenomenal web development services. Our goal is to provide our clients with the highest level of customer service, responsiveness, and support throughout the entire web development process. To guarantee that our clients receive the most cutting-edge solutions, we are dedicated to remaining current with the newest web technologies and trends. 
-
-Our range of services includes responsive web development, search engine optimization, web hosting, database design and registration, e-commerce building, and domain name registration and administration.
 
 # Getting Started
 ## Tecnologies used
@@ -28,7 +24,54 @@ Clone the repository depending on your local environment:
 ```
 The application will be available at http://localhost:4000
 
+# Packages.
+The following packages were used in the project:
+## @emailjs/browser.
+EmailJS helps to send emails using client-side technologies only. No server is required – just connect EmailJS to one of the supported email services, create an email template, and use our SDK to trigger an email. This is a browser-only version.
 
+Install EmailJS SDK using npm:
+```html
+npm install @emailjs/browser
+```
+[Repository](https://github.com/emailjs-com/emailjs-sdk)
+
+## gsap
+GSAP is a robust JavaScript toolset that turns developers into animation superheroes. Build high-performance animations that work in every major browser. Animate CSS, SVG, canvas, React, Vue, WebGL, colors, strings, motion paths, generic objects...anything JavaScript can touch!
+
+Install gsap using npm:
+```html
+npm install gsap
+```
+[Repository](https://github.com/greensock/GSAP)
+
+## lazysizes
+lazysizes is a fast (jank-free), SEO-friendly and self-initializing lazyloader for images (including responsive images picture/srcset), iframes, scripts/widgets and much more. It also prioritizes resources by differentiating between crucial in view and near view elements to make perceived performance even faster.
+
+It may become also your number one tool to integrate responsive images. It can automatically calculate the sizes attribute for your responsive images, it allows you to share media queries for your media attributes with your CSS, helping to separate layout (CSS) from content/structure (HTML) and it makes integrating responsive images into any environment really simple. It also includes a set of optional plugins to further extend its functionality.
+
+Install lazysizes using npm:
+```html
+npm install lazysizes
+```
+[Repository](https://github.com/aFarkas/lazysizes)
+
+## locomotive-scroll
+Detection of elements in viewport & smooth scrolling with parallax effects.
+
+Install locomotive-scroll using npm:
+```html
+npm install locomotive-scroll
+```
+[Repository](https://github.com/locomotivemtl/locomotive-scroll)
+
+## emailjs-com
+EmailJS helps sending emails using client side technologies only. No server is required – just connect EmailJS to one of the supported email services, create an email template, and use our Javascript library to trigger an email.
+
+Install emailjs-com using npm:
+```html
+npm install emailjs-com --save
+```
+[Repository](https://github.com/emailjs-com/emailjs-sdk)
 
 # License
 MIT License
