@@ -44,7 +44,7 @@ function ContactForm(){
 
 
 	return(
-			<form id='contact_form' className="p-3 flex flex-col gap-3 items-center justify-center align-middle" onSubmit={(e) => handleSubmit(e)}>
+			<form id='contact_form' className="p-3 flex flex-col gap-3 items-center justify-center align-middle scroll-smooth" onSubmit={(e) => handleSubmit(e)}>
 							<label className="block text-left align-middle gap-6 w-full">
 							<span>Your Name</span>
 							<input
@@ -98,7 +98,7 @@ function ContactForm(){
 }
 
 
-function Footer(){
+function Footer( { scrollUp  }){
 	return (
 		<div className="bg-black h-full text-slate-200 p-4 text-left">
 				<h2 className="text-3xl p-2 text-center"> Here's Our Contact Information :</h2>
@@ -123,13 +123,15 @@ function Footer(){
 								Call / Whatsapp : +254 758 925 528 | +254 798 347 396
 							</span>
 							<Link to="/">
-								<h1 className='text-5xl cursor-pointer hover:text-blue-500 shadow-lg'>ProDev.io</h1>
+								<button onClick={() => scrollUp('main')}>
+									<h1 className='text-5xl cursor-pointer hover:text-blue-500 shadow-lg'>ProDev.io</h1>
+								</button>
 							</Link>
 						</div>
 					</div>
 				</div>
 
-			<span className="text-sm block text-center align-middle">ProDev Copyright 2023. All Rights Reserved </span>
+			<span className="text-sm block text-center">ProDev Copyright {new Date().getFullYear()}. All Rights Reserved </span>
 		</div>
 	)
 }

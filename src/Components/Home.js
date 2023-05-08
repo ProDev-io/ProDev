@@ -4,6 +4,17 @@ import About from './About'
 import coding  from '../Images/people-coding.png'
 import Footer from './Footer'
 
+export const handleScroll = (element_id) => {
+
+	const element = document.getElementById(element_id); 
+
+	if (element)
+	{
+		console.log(`${element_id} has been clicked`);
+		element.scrollIntoView({ behavior: 'smooth' });
+	}
+};
+
 
 export function Navigation(){
 	return (
@@ -11,8 +22,13 @@ export function Navigation(){
 			<Link to="/">
 				<h1 className='text-5xl cursor-pointer hover:text-blue-500 shadow-lg'>ProDev.io</h1>
 			</Link>
-			<h2 className='hover:text-yellow-50'>WHAT WE DO</h2>
-			<h2 className='hover:text-yellow-50'>CONTACT US</h2>
+			<button onClick={() => handleScroll('about-us')}>
+				<h2 className='hover:text-yellow-50'>WHAT WE DO</h2>
+			</button>
+
+			<button onClick={() => handleScroll('contact_form')}>
+				<h2 className='hover:text-yellow-50'>CONTACT US</h2>
+			</button>
 		</div>
 	)
 }
@@ -26,7 +42,12 @@ function HomeContent(){
 					You Imagine it, We Build it!
 				</p>
 			<div>
-				<button className='border-black animate-bounce rounded font-thin bg-black text-white p-2 hover:bg-white hover:text-black'>
+				<button 
+					className
+					='border-black animate-bounce rounded font-thin bg-black
+					 text-white p-2 hover:bg-white hover:text-black scroll-smooth'
+					 onClick={() => handleScroll('contact_form')}
+					 >
 					Tell Us Your Vison
 				</button>
 			</div>
@@ -37,11 +58,11 @@ function HomeContent(){
 
 function Home(){
 	return(
-		<div className="grid gap-5 snap-center">
+		<div className="grid gap-5 snap-center" id="main">
 			<Navigation />
 			<HomeContent />
 			<About />
-			<Footer />
+			<Footer scrollUp={handleScroll}/>
 		</div>
 	)
 }

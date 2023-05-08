@@ -68,14 +68,14 @@ function About(){
 	]
 
 	return (
-		<div className="p-5 m-5 flex flex-col gap- h-full">
+		<div className="p-5 m-5 flex flex-col gap- h-full scroll-smooth" id="about-us">
 			<h2 className='text-4xl p-3'>What We Do</h2>
 			<section>
 					<ul className='grid grid-cols-3 gap-2'>
 						{ missionList.map((m) => {
 							return (
 							<li
-							key={Math.random() * 100}
+							key={missionList.indexOf(m) + 1}
 							className='p-4 m-4 cursor-pointer text-left text-xl border rounded-md shadow-2xl drop-shadow-lg hover:shadow-blue-500 transition-all ease-in-out hover:translate-y-1 hover:scale-110 duration-300'
 							>
 								{m}
