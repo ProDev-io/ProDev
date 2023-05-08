@@ -68,7 +68,7 @@ function About(){
 	]
 
 	return (
-		<div className="p-5 m-5 flex flex-col gap- h-full">
+		<div className="p-5 m-5 flex flex-col gap- h-full scroll-smooth" id="about-us">
 			<h2 className='text-4xl p-3'>What We Do</h2>
 			<section>
 					<ul className='grid grid-cols-3 gap-2'>
