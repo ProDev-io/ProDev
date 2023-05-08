@@ -131,7 +131,7 @@ function Footer( { scrollUp  }){
 					</div>
 				</div>
 
-			<span className="text-sm block text-center align-middle">ProDev Copyright 2023. All Rights Reserved </span>
+			<span className="text-sm block text-center">ProDev Copyright {new Date().getFullYear()}. All Rights Reserved </span>
 		</div>
 	)
 }
