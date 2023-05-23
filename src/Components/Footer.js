@@ -44,7 +44,7 @@ function ContactForm(){
 
 
 	return(
-			<form id='contact_form' className="desktop:p-3 flex flex-col gap-3 items-center justify-center align-middle scroll-smooth" onSubmit={(e) => handleSubmit(e)}>
+			<form id='contact_form' className="desktop:p-3 flex flex-col gap-3 items-center justify-center align-middle scroll-smooth mb-4" onSubmit={(e) => handleSubmit(e)}>
 							<label className="block text-left align-middle gap-6 w-full">
 							<span>Your Name</span>
 							<input
@@ -102,10 +102,16 @@ function Footer( { scrollUp  }){
 	return (
 		<div className="bg-black  px-1 h-full text-slate-200 text-left">
 				<h2 className="text-3xl p-2 text-center"> Here's Our Contact Information :</h2>
-				<div className="desktop:grid grid-cols-2 gap-6 mobile:grid grid-cols-1 gap-2 tablet: grid grid-cols-1 gap-2">
+				<div 
+					className
+					="desktop:grid desktop:grid-cols-2 desktop:gap-6
+					mobile:flex mobile:flex-col mobile:gap-6
+					tablet:grid tablet:grid-cols-2 tablet:gap-6
+					">
 					<ContactForm />
 
-					<div>
+					<div 
+						className="mobile:text-center desktop:text-left tablet:text-left mb-4">
 						<p>
 							Questions or Queries :
 						</p>
