@@ -100,7 +100,7 @@ function ContactForm(){
 
 function Footer( { scrollUp  }){
 	return (
-		<div className="bg-black h-full text-slate-200 px-1 text-left mobile:bg-black h-full text-slate-200 px-4 text-left tablet:bg-black h-full text-slate-200 px-4 text-left laptop:bg-black h-full text-slate-200 px-4 text-left">
+		<div className="bg-black  px-1 h-full text-slate-200 text-left">
 				<h2 className="text-3xl p-2 text-center"> Here's Our Contact Information :</h2>
 				<div className="desktop:grid grid-cols-2 gap-6 mobile:grid grid-cols-1 gap-2 tablet: grid grid-cols-1 gap-2">
 					<ContactForm />
