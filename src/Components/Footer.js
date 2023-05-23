@@ -100,13 +100,13 @@ function ContactForm(){
 
 function Footer( { scrollUp  }){
 	return (
-		<div className="bg-black  px-1 h-full text-slate-200 text-left">
+		<div className="bg-black px-1 h-full text-slate-200 text-left">
 				<h2 className="text-3xl p-2 text-center"> Here's Our Contact Information :</h2>
 				<div 
 					className
 					="desktop:grid desktop:grid-cols-2 desktop:gap-6
 					mobile:flex mobile:flex-col mobile:gap-6
-					tablet:grid tablet:grid-cols-2 tablet:gap-6
+					tablet:grid tablet:grid-cols-2 tablet:gap-6 m-4 p-2
 					">
 					<ContactForm />
 
