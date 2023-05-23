@@ -44,7 +44,7 @@ function ContactForm(){
 
 
 	return(
-			<form id='contact_form' className="p-3 flex flex-col gap-3 items-center justify-center align-middle scroll-smooth" onSubmit={(e) => handleSubmit(e)}>
+			<form id='contact_form' className="desktop:p-3 flex flex-col gap-3 items-center justify-center align-middle scroll-smooth mb-4" onSubmit={(e) => handleSubmit(e)}>
 							<label className="block text-left align-middle gap-6 w-full">
 							<span>Your Name</span>
 							<input
@@ -100,17 +100,23 @@ function ContactForm(){
 
 function Footer( { scrollUp  }){
 	return (
-		<div className="bg-black h-full text-slate-200 p-4 text-left">
+		<div className="bg-black px-1 h-full text-slate-200 text-left">
 				<h2 className="text-3xl p-2 text-center"> Here's Our Contact Information :</h2>
-				<div className="grid grid-cols-2 gap-6">
+				<div 
+					className
+					="desktop:grid desktop:grid-cols-2 desktop:gap-6
+					mobile:flex mobile:flex-col mobile:gap-6
+					tablet:grid tablet:grid-cols-2 tablet:gap-6 m-4 p-2
+					">
 					<ContactForm />
 
-					<div>
+					<div 
+						className="mobile:text-center desktop:text-left tablet:text-left mb-4">
 						<p>
 							Questions or Queries :
 						</p>
 
-						<div className="text-yellow-50 flex flex-col gap-4">
+						<div className="text-yellow-30 flex flex-col gap-2">
 							<span className ='underline hover:text-blue-600'>
 								support@prodev.io
 							</span>
@@ -124,7 +130,7 @@ function Footer( { scrollUp  }){
 							</span>
 							<Link to="/">
 								<button onClick={() => scrollUp('main')}>
-									<h1 className='text-5xl cursor-pointer hover:text-blue-500 shadow-lg'>ProDev.io</h1>
+									<h1 className='desktop:text-5xl cursor-pointer hover:text-blue-500 shadow-lg'>ProDev.io</h1>
 								</button>
 							</Link>
 						</div>

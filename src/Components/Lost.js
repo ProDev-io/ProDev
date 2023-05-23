@@ -17,7 +17,7 @@ function Lost(){
 					</section>
 					<Footer scrollUp={handleScroll}/>
 				</div>
-			</div>
+		</div>
 	)
 };
 
