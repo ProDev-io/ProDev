@@ -1,7 +1,6 @@
 # 	ProDev Website
 
 ## Introduction
-<hr>
 <br>
 
 <p>
@@ -9,7 +8,6 @@ This website was developed to be used as the main online prescence for ProDev, a
 </p>
 
 ## Technologies used
-<hr>
 <br>
 
 <p>
@@ -20,7 +18,6 @@ The main techologies used to bring the project to life are :
 	<li> Tailwind CSS </li>
 	<li> Vercel </li>
 </ul>
-https://www.emailjs.com/
 <br>
 
 For the Project to run locally or in development mode, these are the required dependencies :
@@ -34,7 +31,6 @@ For the Project to run locally or in development mode, these are the required de
 <br>
 
 ## Libraries / Packages used to attain different functionality
-<hr>
 
 Here are some libraries used to attain functionality that could not be developed in-house :
 
@@ -60,6 +56,5 @@ Here are some libraries used to attain functionality that could not be developed
 
 
 ## Styling / UI
-<hr>
 
 As mentioned earlier, the styling for the site was used mainly using Tailwind CSS utility classes, the [styles.md](/styles.md) goes deeper into the logic and intuition behind the different styles used on the site.
