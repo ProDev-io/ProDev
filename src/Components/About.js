@@ -15,7 +15,7 @@ function RenderService({ image, serviceName }){
 		className
 		="flex items-center align-middle justify-center
 		flex-col gap-y-2 cursor-pointer drop-shadow-lg
-		hover:drop-shadow-2xl">
+		hover:drop-shadow-2xl m-2 ">
 			<img data-src={image} data-sizes="auto" alt="" className='object-cover lazyload border rounded-lg h-80 w-full'/>
 			<h3 className='border-b-5 border-yellow-950 mb-1'>{serviceName}</h3>
 		</div>
@@ -51,7 +51,7 @@ function About(){
 		},
 		{
 			id: 4,
-			name: 'Domain Name Registration & Adminstration',
+			name: 'Domain Adminstration',
 			photo: domain
 		},
 		{
@@ -87,7 +87,10 @@ function About(){
 
 			<article className='p-1'>
 					<h2 className='text-4xl p-3'>Services Offered</h2>
-					<div className='desktop:grid grid-cols-3 items-center justify-center align-middle gap-x-6 gap-y-4 p-2 '>
+					<div
+						className
+						='desktop:grid desktop:grid-cols-3 items-center justify-center align-middle gap-x-6 gap-y-4 p-2 
+						tablet:grid tablet:grid-cols-2'>
 						{ servicesObjects.map((serv) => {
 							const { id, name, photo } = serv;
 							return <RenderService key={id} serviceName={name} image={photo} />
